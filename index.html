@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/cat.png" type="image/png">
+    <title>Mundo Pet</title>
+</head>
+<body>
+    <aside>
+        <img src="Imagens/Logo (4).png" alt="imagem do mundo pet" class="logo-mundoPet">
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#" class="publicar">
+                        <span class="destaque">Publicar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="Imagens/Rectangle 3.png" alt="imagem de icone">
+                        Feed
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="Imagens/cat.png" alt="imagem de icone">
+                        Perfil
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="Imagens/Rectangle 2.png" alt="imagem de icone">
+                        Sobre nós
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="Imagens/Rectangle 4.png" alt="imagem de icone">
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <div class="container-upload-imagem">
+            <div class="upload-imagem">
+                <img src="Imagens/pexels-efrem-efre-2786187-31357888.jpg" alt="upload da imagem" class="main-image">
+            </div>
+            <div class="container-uploadBttn">
+                <button id="uploadButton">Carregar imagem</button>
+                <input type="file" name="uploadInput" id="uploadInput" style="display: none;">
+            </div>
+            <div class="container-addImagem">
+                <p>imagem_do_cachorro.png</p>
+                <img src="Imagens/close.png" alt="sair" width="12px" height="12px">
+            </div>
+        </div>
+        <div class="container-descricao">
+            <h2>Nova foto</h2>
+            <form>
+                <div>
+                    <label for="tituloFoto">Titulo da foto</label>
+                    <input type="text" name="tituloFoto" id="tituloFoto">
+                </div>
+                <div>
+                    <label for="">Descrição</label>
+                    <textarea name="desc" id="desc"></textarea>
+                </div>
+                <div>
+                    <label for="hashTags">Hashtags</label>
+                    <input type="text" name="hashTags" id="hashTags">
+                </div>
+                <div>
+                    <ul class="lista-hashTags">
+                        <li class="linhas-hashTags">
+                            <p>Front-end</p>
+                            <img src="Imagens/close-black.png" alt="cancelar" width="15px" height="15px">
+                        </li>
+                    </ul>
+                </div>
+                <div class="container-botoes">
+                    <button class="botao-descartar">Descartar</button>
+                    <button class="botao-publicar">Publicar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
