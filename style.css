@@ -140,6 +140,14 @@ a.publicar {
     border-radius: 8px;
 }
 
+a.publicar:hover {
+    transition: 0.3s;
+    background-color: rgb(41, 18, 53);
+    color: var(--rosa-destaque);
+    border: 1px solid var(--background);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.22);
+}
+
 span.destaque {
     color: var(--rosa-destaque);
 }
@@ -212,11 +220,12 @@ span.destaque {
     gap: 8px;
     width: 100%;
     margin-bottom: 8px;
+    font-weight: 600;
 }
 
 #uploadButton::after {
     content: "";
-    background-image: url(Imagens/upload.png);
+    background-image: url('Imagens/Vector\ \(3\).png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 15px;
@@ -226,6 +235,18 @@ span.destaque {
     top: 50%;
     transform: translateY(-50%);
     margin-left: 8px;
+}
+
+#uploadButton:hover {
+    transition: 0.3s;
+    background-color: var(--cinza-medio);
+    color: var(--background);
+    border: 1px solid var(--cinza-medio);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.22);
+}
+
+#uploadButton:hover::after {
+    background-image: url('Imagens/Vector\ \(2\).png');
 }
 
 .container-addImagem {
@@ -412,7 +433,7 @@ textarea {
 
 .botao-descartar::after {
     content: "";
-    background-image: url(Imagens/arrow_forward.png);
+    background-image: url('Imagens/arrow_forward.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 15px;
@@ -426,21 +447,22 @@ textarea {
 
 .botao-descartar:hover {
     transition: 0.3s;
-    background-color: var(--rosa-destaque);
-    color: var(--verde-petroleo);
-    border: 1px solid var(--rosa-destaque);
+    background-color: rgb(41, 18, 53);
+    color: var(--rosa-destaque);
+    border: 1px solid var(--background);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.22);
 }
 
 .botao-publicar {
     background-color: var(--rosa-destaque);
-    color: var(--verde-petroleo);
+    color: black;
     border: 1px solid var(--rosa-destaque);
     position: relative;
 }
 
 .botao-publicar::after {
     content: "";
-    background-image: url(Imagens/arrow_forward2.png);
+    background-image: url('Imagens/Vector\ \(1\).png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 15px;
@@ -454,9 +476,14 @@ textarea {
 
 .botao-publicar:hover {
     transition: 0.3s;
-    background-color: var(--background);
+    background-color: rgb(41, 18, 53);
     color: var(--rosa-destaque);
-    border: 1px solid var(--rosa-destaque);
+    border: 1px solid var(--background);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.22);
+}
+
+.botao-publicar:hover::after {
+    background-image: url('Imagens/Vector.png');
 }
 
 /* Ícones dos botões */
