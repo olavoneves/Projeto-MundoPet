@@ -55,7 +55,6 @@ aside {
 }
 
 main {
-    background-color: var(--background);
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -78,12 +77,14 @@ main {
         width: 20%;
         height: 100%;
         margin-bottom: 0;
+        background-color: var(--background);
     }
     
     main {
         width: 50vw;
         height: 100%;
         flex-direction: row;
+        background-color: var(--background);
     }
 }
 
@@ -102,6 +103,7 @@ main {
     main {
         width: 60vw;
         gap: 20px;
+        background-color: var(--background);
     }
 }
 
@@ -331,10 +333,12 @@ form div input, textarea {
 
 form div input {
     height: 39px;
+    box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.283);
 }
 
 textarea {
     height: 100px;
+    box-shadow: 2px 2px 8px 3px rgba(0, 0, 0, 0.297);
 }
 
 @media (min-width: 768px) {
@@ -364,6 +368,7 @@ textarea {
     gap: 10px;
     padding: 4px 8px;
     border-radius: 4px;
+    margin-right: 5px;
 }
 
 .lista-hashTags {
@@ -375,6 +380,10 @@ textarea {
     align-items: center;
     gap: 10px;
     font-size: 14px;
+}
+
+.removeHashTag {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
